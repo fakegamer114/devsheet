@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+/* making white border around header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #0a0a0a;
+  border: 1px solid rgb(225, 225, 225, 0.5);
+  border-radius: 20px;
+  margin-bottom: 20%;
+  
+}
+h4 {
+  color: #636363;
+  font-size: 11px;
+  text-align: center;
+  background-color: #1d1d1d;
+  border-radius: 20px;
+  width: 250px;
+  padding: 1px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease-out;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 10px;
+  height: 10px;
+  
+}
+
+.logo-icon {
+  background-color: #0d7377;
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.logo img{
+
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.open-btn {
+  background-color: #0d7377;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 10px;
+}
+h1 {
+  color: #ffffff;
+  font-size: 35px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+.highlight {
+  color: #0d7377;
+}
+/* making white border around header */
+p {
+  color: #ffffff9f;
+  font-size: 10px;
+  font-family: monospace;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+.description {
+  margin-bottom: 100px;
+}
+
+.cheatsheet-btn {
+  background-color: #0d7377;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  animation: fadeInUp 1.5s ease-out;
+}
+.cheatsheet-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0a0a0a;
+  color: #636363;
+  font-size: 12px;
+  margin-top: 40px;
+}
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translatey(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+  }
