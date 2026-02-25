@@ -37,8 +37,8 @@ h4 {
 }
 
 .logo-icon {
-  background-color: #0d7377;
-  color: white;
+  background-color: #007c807a;
+  color: rgb(1, 166, 172);
   font-family: monospace;
   font-weight: bold;
   font-size: 10px;
@@ -122,7 +122,7 @@ footer {
   background-color: #0a0a0a;
   color: #636363;
   font-size: 12px;
-  margin-top: 40px;
+  margin-top: 200px;
 }
 
 @media (max-width: 768px) {

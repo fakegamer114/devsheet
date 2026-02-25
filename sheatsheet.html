@@ -9,16 +9,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="sheatsheet-style.css">
   <link rel="icon" href="download.png" type="image/png">
+  <!-- link the js file --- -->
+  <script src="node.js"></script>
 </head>
 <body>
   <header>
     
     
     <div class="logo">
-        <div class="logo-icon">&gt;_</div>
+        <div class="logo-icon" onclick="window.location.href='index.html'">&gt;_</div>
         <span class="logo-text" onclick="window.location.href='index.html'">DevSheet</span>
     </div>
-    <button class="open-btn">Open App</button>
+        <button class="open-btn" id="openAppBtn" onclick="openApp()">Open App</button>
 
   </header>
   <body>

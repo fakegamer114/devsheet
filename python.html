@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A website for programming languages cheatsheets with favorite features">
+  <title>DevSheet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="python.css">
+  <link rel="icon" href="download.png" type="image/png">
+    <!-- link the js file --- -->
+    <script src="node.js"></script>
+</head>
+<body>
+    <header>
+        
+        
+        <div class="logo">
+            <div class="logo-icon" onclick="window.location.href='index.html'">&gt;_</div>
+            <span class="logo-text" onclick="window.location.href='index.html'">DevSheet</span>
+        </div><!--// sanding message warning when taping on the button that given by id openAppBtn-->
+        
+        <button class="open-btn" id="openAppBtn" onclick="openApp()">Open App</button>
+    
+    </header>
+        <!--return back to the last page -->
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        
+        <!-- Search bar -->
+        <input type="text" id="search-bar" placeholder="Search cheatsheets...">
+        
+        <h2>Python Cheatsheet</h2>
+        
+        <!--cards for the sheatsheet withe favorating and copy ability-->
+        <div class="cards-container">
+            <div class="card">
+                <h3>Variables</h3>
+                <p><code>x = 5<br>y = "Hello"</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('x = 5\ny = &quot;Hello&quot;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Data Types</h3>
+                <p><code>int, float, str, bool, list, dict</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('int, float, str, bool, list, dict')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Lists</h3>
+                <p><code>my_list = [1, 2, 3]<br>my_list.append(4)</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('my_list = [1, 2, 3]\nmy_list.append(4)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Dictionaries</h3>
+                <p><code>my_dict = {'key': 'value'}<br>my_dict['new_key'] = 'new_value'</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('my_dict = {\'key\': \'value\'}\nmy_dict[\'new_key\'] = \'new_value\'')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>If Statement</h3>
+                <p><code>if x > 5:<br>&nbsp;&nbsp;print("x is greater than 5")</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('if x > 5:\n    print(&quot;x is greater than 5&quot;)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>For Loop</h3>
+                <p><code>for i in range(5):<br>&nbsp;&nbsp;print(i)</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('for i in range(5):\n    print(i)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>While Loop</h3>
+                <p><code>while x < 10:<br>&nbsp;&nbsp;x += 1</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('while x < 10:\n    x += 1')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Function</h3>
+                <p><code>def my_function():<br>&nbsp;&nbsp;return "Hello"</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('def my_function():\n    return &quot;Hello&quot;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Print Statement</h3>
+                <p><code>print("Hello World")<br>print(f"x = {x}")</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('print(&quot;Hello World&quot;)\nprint(f&quot;x = {x}&quot;)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Input</h3>
+                <p><code>name = input("Enter name: ")</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('name = input(&quot;Enter name: &quot;)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Strings</h3>
+                <p><code>my_string = "Hello"<br>print(len(my_string))<br>print(my_string.upper())</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('my_string = &quot;Hello&quot;\nprint(len(my_string))\nprint(my_string.upper())')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Tuples</h3>
+                <p><code>my_tuple = (1, 2, 3)<br>print(my_tuple[0])</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('my_tuple = (1, 2, 3)\nprint(my_tuple[0])')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Sets</h3>
+                <p><code>my_set = {1, 2, 3}<br>my_set.add(4)</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('my_set = {1, 2, 3}\nmy_set.add(4)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>List Comprehensions</h3>
+                <p><code>squares = [x**2 for x in range(5)]<br>print(squares)</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('squares = [x**2 for x in range(5)]\nprint(squares)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Dictionary Comprehensions</h3>
+                <p><code>squares_dict = {x: x**2 for x in range(5)}<br>print(squares_dict)</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('squares_dict = {x: x**2 for x in range(5)}\nprint(squares_dict)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Lambda Functions</h3>
+                <p><code>add = lambda a, b: a + b<br>print(add(2, 3))</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('add = lambda a, b: a + b\nprint(add(2, 3))')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Classes</h3>
+                <p><code>class MyClass:<br>&nbsp;&nbsp;def __init__(self, value):<br>&nbsp;&nbsp;&nbsp;&nbsp;self.value = value</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('class MyClass:\n    def __init__(self, value):\n        self.value = value')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Try-Except</h3>
+                <p><code>try:<br>&nbsp;&nbsp;x = 1 / 0<br>except ZeroDivisionError:<br>&nbsp;&nbsp;print("Error")</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('try:\n    x = 1 / 0\nexcept ZeroDivisionError:\n    print(&quot;Error&quot;)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>File Handling</h3>
+                <p><code>with open('file.txt', 'w') as f:<br>&nbsp;&nbsp;f.write("Hello")</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('with open(&#39;file.txt&#39;, &#39;w&#39;) as f:\n    f.write(&quot;Hello&quot;)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Modules</h3>
+                <p><code>import math<br>print(math.sqrt(16))</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('import math\nprint(math.sqrt(16))')">Copy</button>
+            </div>
+
+        </div>
+        
+    </body>
+    <footer>
+        <p>&copy; 2026 DevSheet. All rights reserved.</p> 
+    </footer>
+</html>
