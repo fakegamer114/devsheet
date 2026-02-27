@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A website for programming languages cheatsheets with favorite features">
+  <title>DevSheet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="sheatsheet-style.css">
+  <link rel="icon" href="download.png" type="image/png">
+  <!-- link the js file --- -->
+  <script src="node.js"></script>
+</head>
+<body>
+  <header>
+    
+    
+    <div class="logo">
+        <div class="logo-icon" onclick="window.location.href='index.html'">&gt;_</div>
+        <span class="logo-text" onclick="window.location.href='index.html'">DevSheet</span>
+    </div>
+        <button class="open-btn" id="openAppBtn" onclick="openApp()">Open App</button>
+
+  </header>
+  <body>
+    <!-- the sheatsheets page -->
+    <h1>Welcome to <span class="highlight">DevSheet.</span> Cheatsheets for All Your Programming Needs!</h1>
+    <p class="description">Here you can find comprehensive cheatsheets for various programming languages, including Python, HTML, CSS, JavaScript, Java, C#, C++, C, and Assembly. Click on
+    the buttons below to explore the cheatsheets for each language:</p>
+    <div class="cheatsheet-buttons">
+        <button class="cheatsheet-btn" onclick="window.location.href='python.html'">Python Cheatsheet</button>
+        <button class="cheatsheet-btn" onclick="window.location.href='html.html'">HTML Cheatsheet</button>
+        <button class="cheatsheet-btn" onclick="window.location.href='css.html'">CSS Cheatsheet</button>
+        <button class="cheatsheet-btn" onclick="window.location.href='js.html'">JavaScript Cheatsheet</button>
+        <button class="cheatsheet-btn" onclick="window.location.href='java.html'">Java Cheatsheet</button>
+        <button class="cheatsheet-btn" onclick="window.location.href='csharp.html'">C# Cheatsheet</button>
+        <button class="cheatsheet-btn" onclick="window.location.href='cpp.html'">C++ Cheatsheet</button>
+        <button class="cheatsheet-btn" onclick="window.location.href='c.html'">C Cheatsheet</button>
+        <button class="cheatsheet-btn" onclick="window.location.href='assembly.html'">Assembly Cheatsheet</button>
+    </div>
+  </body>
+<footer>
+  <p>&copy; 2026 DevSheet. All rights reserved.</p>
+
+</footer>
+</html>

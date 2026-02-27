@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A cheatsheet for HTML markup structures and elements">
+  <title>DevSheet - HTML Cheatsheet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="python.css">
+  <link rel="icon" href="download.png" type="image/png">
+  <script src="node.js"></script>
+</head>
+<body>
+    <header>
+        
+        
+        <div class="logo">
+            <div class="logo-icon" onclick="window.location.href='index.html'">&gt;_</div>
+            <span class="logo-text" onclick="window.location.href='index.html'">DevSheet</span>
+        </div><!--// sanding message warning when taping on the button that given by id openAppBtn-->
+        
+        <button class="open-btn" id="openAppBtn" onclick="openApp()">Open App</button>
+    
+    </header>
+        <!--return back to the last page -->
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        
+        <!-- Search bar -->
+        <input type="text" id="search-bar" placeholder="Search cheatsheets...">
+        
+        <h2>HTML Cheatsheet</h2>
+        
+        <!--cards for the sheatsheet withe favorating and copy ability-->
+        <div class="cards-container">
+            <div class="card">
+                <h3>Doctype</h3>
+                <p><code>&lt;!DOCTYPE html&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('&lt;!DOCTYPE html&gt;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Headings</h3>
+                <p><code>&lt;h1&gt;Title&lt;/h1&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('&lt;h1&gt;Title&lt;/h1&gt;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Paragraph</h3>
+                <p><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('&lt;p&gt;This is a paragraph.&lt;/p&gt;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Link</h3>
+                <p><code>&lt;a href="https://example.com"&gt;Link&lt;/a&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('&lt;a href=&quot;https://example.com&quot;&gt;Link&lt;/a&gt;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Image</h3>
+                <p><code>&lt;img src="image.jpg" alt="desc"/&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('&lt;img src=&quot;image.jpg&quot; alt=&quot;desc&quot;/&gt;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Lists</h3>
+                <p><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Table</h3>
+                <p><code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('&lt;table&gt;&lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Form</h3>
+                <p><code>&lt;form action="/"&gt;&lt;input&gt;&lt;/form&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('&lt;form action=&quot;/&quot;&gt;&lt;input&gt;&lt;/form&gt;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Input</h3>
+                <p><code>&lt;input type="text" name="name"/&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('&lt;input type=&quot;text&quot; name=&quot;name&quot;/&gt;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Meta Charset</h3>
+                <p><code>&lt;meta charset="UTF-8"/&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('&lt;meta charset=&quot;UTF-8&quot;/&gt;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Comment</h3>
+                <p><code>&lt;!-- This is a comment --&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('&lt;!-- This is a comment --&gt;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Div/Span</h3>
+                <p><code>&lt;div&gt;Block&lt;/div&gt; &lt;span&gt;Inline&lt;/span&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('&lt;div&gt;Block&lt;/div&gt; &lt;span&gt;Inline&lt;/span&gt;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Script</h3>
+                <p><code>&lt;script src="app.js"&gt;&lt;/script&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('&lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Semantic Tags</h3>
+                <p><code>&lt;header&gt;…&lt;/header&gt; &lt;footer&gt;…&lt;/footer&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('&lt;header&gt;…&lt;/header&gt; &lt;footer&gt;…&lt;/footer&gt;')">Copy</button>
+            </div>
+        </div>
+        
+    </body>
+    <footer>
+        <p>&copy; 2026 DevSheet. All rights reserved.</p> 
+    </footer>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A cheatsheet for C language syntax and standard functions">
+  <title>DevSheet - C Cheatsheet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="python.css">
+  <link rel="icon" href="download.png" type="image/png">
+  <script src="node.js"></script>
+</head>
+<body>
+    <header>
+        
+        
+        <div class="logo">
+            <div class="logo-icon" onclick="window.location.href='index.html'">&gt;_</div>
+            <span class="logo-text" onclick="window.location.href='index.html'">DevSheet</span>
+        </div><!--// sanding message warning when taping on the button that given by id openAppBtn-->
+        
+        <button class="open-btn" id="openAppBtn" onclick="openApp()">Open App</button>
+    
+    </header>
+        <!--return back to the last page -->
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        
+        <!-- Search bar -->
+        <input type="text" id="search-bar" placeholder="Search cheatsheets...">
+        
+        <h2>C Cheatsheet</h2>
+        
+        <!--cards for the sheatsheet withe favorating and copy ability-->
+        <div class="cards-container">
+            <div class="card">
+                <h3>Include</h3>
+                <p><code>#include &lt;stdio.h&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('#include &lt;stdio.h&gt;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Main</h3>
+                <p><code>int main(void) { return 0; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('int main(void) { return 0; }')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Printf</h3>
+                <p><code>printf("Hello\n");</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('printf(&quot;Hello\\n&quot;);')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Pointer</h3>
+                <p><code>int *p = &amp;x;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('int *p = &amp;x;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Variable</h3>
+                <p><code>int x = 10;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('int x = 10;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>If/Else</h3>
+                <p><code>if(x &gt; 0) { } else { }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('if(x &gt; 0) { } else { }')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>For Loop</h3>
+                <p><code>for(int i=0;i&lt;5;i++) { }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('for(int i=0;i&lt;5;i++) { }')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Function</h3>
+                <p><code>int add(int a,int b){return a+b;}</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('int add(int a,int b){return a+b;}')">Copy</button>
+            </div>
+        </div>
+        
+    </body>
+    <footer>
+        <p>&copy; 2026 DevSheet. All rights reserved.</p> 
+    </footer>
+</html>

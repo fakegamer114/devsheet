@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A cheatsheet for JavaScript basics and DOM interactions">
+  <title>DevSheet - JavaScript Cheatsheet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="python.css">
+  <link rel="icon" href="download.png" type="image/png">
+  <script src="node.js"></script>
+</head>
+<body>
+    <header>
+        
+        
+        <div class="logo">
+            <div class="logo-icon" onclick="window.location.href='index.html'">&gt;_</div>
+            <span class="logo-text" onclick="window.location.href='index.html'">DevSheet</span>
+        </div><!--// sanding message warning when taping on the button that given by id openAppBtn-->
+        
+        <button class="open-btn" id="openAppBtn" onclick="openApp()">Open App</button>
+    
+    </header>
+        <!--return back to the last page -->
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        
+        <!-- Search bar -->
+        <input type="text" id="search-bar" placeholder="Search cheatsheets...">
+        
+        <h2>JavaScript Cheatsheet</h2>
+        
+        <!--cards for the sheatsheet withe favorating and copy ability-->
+        <div class="cards-container">
+            <div class="card">
+                <h3>Variable</h3>
+                <p><code>let x = 5;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('let x = 5;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Function</h3>
+                <p><code>function greet(){return "hi";}</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('function greet(){return &quot;hi&quot;;}')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Arrow</h3>
+                <p><code>const add = (a,b)=>a+b;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('const add = (a,b)=>a+b;')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>DOM</h3>
+                <p><code>document.getElementById('id');</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('document.getElementById(\'id\');')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Event</h3>
+                <p><code>element.addEventListener('click',fn);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('element.addEventListener(\'click\',fn);')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Async/Await</h3>
+                <p><code>async function f(){await fetch(url);}</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('async function f(){await fetch(url);}')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Template</h3>
+                <p><code>const t = `Hello ${name}`;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('const t = `Hello ${name}`;')">Copy</button>
+            </div>
+        </div>
+        
+    </body>
+    <footer>
+        <p>&copy; 2026 DevSheet. All rights reserved.</p> 
+    </footer>
+</html>
