@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A cheatsheet for basic assembly instructions (x86 syntax)">
+  <title>DevSheet - Assembly Cheatsheet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="python.css">
+  <link rel="icon" href="download.png" type="image/png">
+  <script src="node.js"></script>
+</head>
+<body>
+    <header>
+        
+        
+        <div class="logo">
+            <div class="logo-icon" onclick="window.location.href='index.html'">&gt;_</div>
+            <span class="logo-text" onclick="window.location.href='index.html'">DevSheet</span>
+        </div><!--// sanding message warning when taping on the button that given by id openAppBtn-->
+        
+        <button class="open-btn" id="openAppBtn" onclick="openApp()">Open App</button>
+    
+    </header>
+        <!--return back to the last page -->
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        
+        <!-- Search bar -->
+        <input type="text" id="search-bar" placeholder="Search cheatsheets...">
+        
+        <h2>Assembly Cheatsheet</h2>
+        
+        <!--cards for the sheatsheet withe favorating and copy ability-->
+        <div class="cards-container">
+            <div class="card">
+                <h3>Move</h3>
+                <p><code>mov ax, bx</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('mov ax, bx')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Add</h3>
+                <p><code>add ax, 1</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('add ax, 1')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Sub</h3>
+                <p><code>sub bx, ax</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('sub bx, ax')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Call</h3>
+                <p><code>call function_label</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('call function_label')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Interrupt</h3>
+                <p><code>int 0x80</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('int 0x80')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Label</h3>
+                <p><code>start:</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('start:')">Copy</button>
+            </div>
+            <div class="card">
+                <h3>Jump</h3>
+                <p><code>jmp start</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('jmp start')">Copy</button>
+            </div>
+        </div>
+        
+    </body>
+    <footer>
+        <p>&copy; 2026 DevSheet. All rights reserved.</p> 
+    </footer>
+</html>

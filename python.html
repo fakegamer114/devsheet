@@ -154,6 +154,103 @@
                 <button class="copy-btn" onclick="copyToClipboard('import math\nprint(math.sqrt(16))')">Copy</button>
             </div>
 
+            <div class="card">
+                <h3>List Slicing</h3>
+                <p><code>my_list = [0, 1, 2, 3, 4]<br>print(my_list[1:3])<br>print(my_list[::2])</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('my_list = [0, 1, 2, 3, 4]\nprint(my_list[1:3])\nprint(my_list[::2])')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>String Methods</h3>
+                <p><code>text = "hello world"<br>print(text.upper())<br>print(text.split())</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('text = &quot;hello world&quot;\nprint(text.upper())\nprint(text.split())')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Enumerate</h3>
+                <p><code>for i, item in enumerate(['a', 'b', 'c']):<br>&nbsp;&nbsp;print(i, item)</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('for i, item in enumerate([\'a\', \'b\', \'c\']):\n    print(i, item)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Zip</h3>
+                <p><code>names = ['Alice', 'Bob']<br>ages = [25, 30]<br>for name, age in zip(names, ages):<br>&nbsp;&nbsp;print(name, age)</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('names = [\'Alice\', \'Bob\']\nages = [25, 30]\nfor name, age in zip(names, ages):\n    print(name, age)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Map</h3>
+                <p><code>numbers = [1, 2, 3]<br>squared = list(map(lambda x: x**2, numbers))</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('numbers = [1, 2, 3]\nsquared = list(map(lambda x: x**2, numbers))')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Filter</h3>
+                <p><code>numbers = [1, 2, 3, 4, 5]<br>evens = list(filter(lambda x: x % 2 == 0, numbers))</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('numbers = [1, 2, 3, 4, 5]\nevens = list(filter(lambda x: x % 2 == 0, numbers))')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>*args</h3>
+                <p><code>def func(*args):<br>&nbsp;&nbsp;for arg in args:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(arg)<br>func(1, 2, 3)</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('def func(*args):\n    for arg in args:\n        print(arg)\nfunc(1, 2, 3)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>**kwargs</h3>
+                <p><code>def func(**kwargs):<br>&nbsp;&nbsp;for key, value in kwargs.items():<br>&nbsp;&nbsp;&nbsp;&nbsp;print(key, value)</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('def func(**kwargs):\n    for key, value in kwargs.items():\n        print(key, value)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Type Hints</h3>
+                <p><code>def add(a: int, b: int) -> int:<br>&nbsp;&nbsp;return a + b</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('def add(a: int, b: int) -> int:\n    return a + b')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Generator</h3>
+                <p><code>def count_up(max):<br>&nbsp;&nbsp;n = 1<br>&nbsp;&nbsp;while n <= max:<br>&nbsp;&nbsp;&nbsp;&nbsp;yield n<br>&nbsp;&nbsp;&nbsp;&nbsp;n += 1</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('def count_up(max):\n    n = 1\n    while n <= max:\n        yield n\n        n += 1')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Decorators</h3>
+                <p><code>def decorator(func):<br>&nbsp;&nbsp;def wrapper():<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Before")<br>&nbsp;&nbsp;&nbsp;&nbsp;func()<br>&nbsp;&nbsp;return wrapper</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('def decorator(func):\n    def wrapper():\n        print(&quot;Before&quot;)\n        func()\n    return wrapper')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Sorting</h3>
+                <p><code>my_list = [3, 1, 2]<br>sorted_list = sorted(my_list)<br>my_list.sort()</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('my_list = [3, 1, 2]\nsorted_list = sorted(my_list)\nmy_list.sort()')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>List Methods</h3>
+                <p><code>lst = [1, 2, 3]<br>lst.append(4)<br>lst.remove(2)<br>lst.pop()</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('lst = [1, 2, 3]\nlst.append(4)\nlst.remove(2)\nlst.pop()')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Dictionary Methods</h3>
+                <p><code>d = {'a': 1, 'b': 2}<br>print(d.keys())<br>print(d.values())<br>print(d.items())</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('d = {\'a\': 1, \'b\': 2}\nprint(d.keys())\nprint(d.values())\nprint(d.items())')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Any & All</h3>
+                <p><code>lst = [True, True, False]<br>print(any(lst))<br>print(all(lst))</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('lst = [True, True, False]\nprint(any(lst))\nprint(all(lst))')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Join & Split</h3>
+                <p><code>lst = ['a', 'b', 'c']<br>text = '-'.join(lst)<br>words = text.split('-')</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('lst = [\'a\', \'b\', \'c\']\ntext = \'-\'.join(lst)\nwords = text.split(\'-\')')">Copy</button>
+            </div>
+
+
         </div>
         
     </body>
