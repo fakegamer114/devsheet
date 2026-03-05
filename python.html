@@ -249,6 +249,66 @@
                 <p><code>lst = ['a', 'b', 'c']<br>text = '-'.join(lst)<br>words = text.split('-')</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('lst = [\'a\', \'b\', \'c\']\ntext = \'-\'.join(lst)\nwords = text.split(\'-\')')">Copy</button>
             </div>
+            
+            <div class="card">
+                <h3>Context Managers</h3>
+                <p><code>with open('file.txt', 'r') as f:<br>&nbsp;&nbsp;content = f.read()</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('with open(&#39;file.txt&#39;, &#39;r&#39;) as f:\n    content = f.read()')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Inheritance</h3>
+                <p><code>class Animal:<br>&nbsp;&nbsp;def speak(self):<br>&nbsp;&nbsp;&nbsp;&nbsp;pass<br>class Dog(Animal):<br>&nbsp;&nbsp;def speak(self):<br>&nbsp;&nbsp;&nbsp;&nbsp;return "Woof"</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('class Animal:\n    def speak(self):\n        pass\nclass Dog(Animal):\n    def speak(self):\n        return &quot;Woof&quot;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Magic Methods</h3>
+                <p><code>class MyClass:<br>&nbsp;&nbsp;def __init__(self, value):<br>&nbsp;&nbsp;&nbsp;&nbsp;self.value = value<br>&nbsp;&nbsp;def __str__(self):<br>&nbsp;&nbsp;&nbsp;&nbsp;return str(self.value)</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('class MyClass:\n    def __init__(self, value):\n        self.value = value\n    def __str__(self):\n        return str(self.value)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>F-strings</h3>
+                <p><code>name = "Alice"<br>age = 30<br>print(f"{name} is {age} years old")</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('name = &quot;Alice&quot;\nage = 30\nprint(f&quot;{name} is {age} years old&quot;)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Regular Expressions</h3>
+                <p><code>import re<br>pattern = r'\d+'<br>text = "There are 123 apples"<br>matches = re.findall(pattern, text)</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('import re\npattern = r&#39;\\d+&#39;\ntext = &quot;There are 123 apples&quot;\nmatch = re.findall(pattern, text)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>JSON Handling</h3>
+                <p><code>import json<br>data = {'name': 'Alice', 'age': 30}<br>json_str = json.dumps(data)<br>parsed = json.loads(json_str)</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('import json\ndata = {&#39;name&#39;: &#39;Alice&#39;, &#39;age&#39;: 30}\njson_str = json.dumps(data)\nparsed = json.loads(json_str)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Datetime</h3>
+                <p><code>from datetime import datetime<br>now = datetime.now()<br>print(now.strftime("%Y-%m-%d"))</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('from datetime import datetime\nnow = datetime.now()\nprint(now.strftime(&quot;%Y-%m-%d&quot;))')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Random Module</h3>
+                <p><code>import random<br>print(random.randint(1, 10))<br>print(random.choice(['a', 'b', 'c']))</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('import random\nprint(random.randint(1, 10))\nprint(random.choice([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]))')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>OS Module</h3>
+                <p><code>import os<br>print(os.getcwd())<br>os.mkdir('new_folder')</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('import os\nprint(os.getcwd())\nos.mkdir(&#39;new_folder&#39;)')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Recursion</h3>
+                <p><code>def factorial(n):<br>&nbsp;&nbsp;if n == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;return 1<br>&nbsp;&nbsp;return n * factorial(n-1)</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('def factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n-1)')">Copy</button>
+            </div>
 
 
         </div>

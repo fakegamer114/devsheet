@@ -73,6 +73,235 @@
                 <p><code>#include &lt;vector&gt;</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('#include &lt;vector&gt;')">Copy</button>
             </div>
+            
+            <div class="card">
+                <h3>Namespace</h3>
+                <p><code>using namespace std;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('using namespace std;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Template</h3>
+                <p><code>template&lt;typename T&gt; T add(T a, T b) { return a + b; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('template&lt;typename T&gt; T add(T a, T b) { return a + b; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Inheritance</h3>
+                <p><code>class Dog : public Animal { };</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('class Dog : public Animal { };')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Polymorphism</h3>
+                <p><code>virtual void speak() = 0;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('virtual void speak() = 0;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Virtual</h3>
+                <p><code>virtual void func() { }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('virtual void func() { }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Override</h3>
+                <p><code>void func() override { }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('void func() override { }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Final</h3>
+                <p><code>class Base final { };</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('class Base final { };')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Constexpr</h3>
+                <p><code>constexpr int x = 5;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('constexpr int x = 5;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Auto</h3>
+                <p><code>auto x = 5;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('auto x = 5;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Lambda</h3>
+                <p><code>auto f = [](){ return 1; };</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('auto f = [](){ return 1; };')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Smart Pointers</h3>
+                <p><code>std::unique_ptr&lt;int&gt; p(new int(5));</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::unique_ptr&lt;int&gt; p(new int(5));')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Unique_ptr</h3>
+                <p><code>std::unique_ptr&lt;int&gt; p = std::make_unique&lt;int&gt;(5);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::unique_ptr&lt;int&gt; p = std::make_unique&lt;int&gt;(5);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Shared_ptr</h3>
+                <p><code>std::shared_ptr&lt;int&gt; p = std::make_shared&lt;int&gt;(5);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::shared_ptr&lt;int&gt; p = std::make_shared&lt;int&gt;(5);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Weak_ptr</h3>
+                <p><code>std::weak_ptr&lt;int&gt; wp = sp;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::weak_ptr&lt;int&gt; wp = sp;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Array</h3>
+                <p><code>std::array&lt;int, 5&gt; arr;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::array&lt;int, 5&gt; arr;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Deque</h3>
+                <p><code>std::deque&lt;int&gt; dq;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::deque&lt;int&gt; dq;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>List</h3>
+                <p><code>std::list&lt;int&gt; lst;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::list&lt;int&gt; lst;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Set</h3>
+                <p><code>std::set&lt;int&gt; s;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::set&lt;int&gt; s;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Map</h3>
+                <p><code>std::map&lt;int, std::string&gt; m;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::map&lt;int, std::string&gt; m;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Unordered_map</h3>
+                <p><code>std::unordered_map&lt;int, std::string&gt; um;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::unordered_map&lt;int, std::string&gt; um;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Algorithm</h3>
+                <p><code>#include &lt;algorithm&gt;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('#include &lt;algorithm&gt;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Sort</h3>
+                <p><code>std::sort(v.begin(), v.end());</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::sort(v.begin(), v.end());')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Find</h3>
+                <p><code>std::find(v.begin(), v.end(), 5);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::find(v.begin(), v.end(), 5);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>For_each</h3>
+                <p><code>std::for_each(v.begin(), v.end(), func);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::for_each(v.begin(), v.end(), func);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Transform</h3>
+                <p><code>std::transform(in.begin(), in.end(), out.begin(), func);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::transform(in.begin(), in.end(), out.begin(), func);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Copy</h3>
+                <p><code>std::copy(src.begin(), src.end(), dest.begin());</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::copy(src.begin(), src.end(), dest.begin());')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Fill</h3>
+                <p><code>std::fill(v.begin(), v.end(), 0);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::fill(v.begin(), v.end(), 0);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Generate</h3>
+                <p><code>std::generate(v.begin(), v.end(), gen);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::generate(v.begin(), v.end(), gen);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Iota</h3>
+                <p><code>std::iota(v.begin(), v.end(), 0);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::iota(v.begin(), v.end(), 0);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Accumulate</h3>
+                <p><code>std::accumulate(v.begin(), v.end(), 0);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::accumulate(v.begin(), v.end(), 0);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Inner_product</h3>
+                <p><code>std::inner_product(a.begin(), a.end(), b.begin(), 0);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::inner_product(a.begin(), a.end(), b.begin(), 0);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Partial_sum</h3>
+                <p><code>std::partial_sum(in.begin(), in.end(), out.begin());</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::partial_sum(in.begin(), in.end(), out.begin());')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Adjacent_difference</h3>
+                <p><code>std::adjacent_difference(in.begin(), in.end(), out.begin());</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::adjacent_difference(in.begin(), in.end(), out.begin());')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Min/Max</h3>
+                <p><code>std::min(a, b); std::max(a, b);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::min(a, b); std::max(a, b);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Clamp</h3>
+                <p><code>std::clamp(val, low, high);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::clamp(val, low, high);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Swap</h3>
+                <p><code>std::swap(a, b);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::swap(a, b);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Reverse</h3>
+                <p><code>std::reverse(v.begin(), v.end());</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::reverse(v.begin(), v.end());')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Rotate</h3>
+                <p><code>std::rotate(v.begin(), v.begin()+1, v.end());</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('std::rotate(v.begin(), v.begin()+1, v.end());')">Copy</button>
+            </div>
+
         </div>
         
     </body>

@@ -68,6 +68,241 @@
                 <p><code>transition: all 0.3s;</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('transition: all 0.3s;')">Copy</button>
             </div>
+            
+            <div class="card">
+                <h3>:hover</h3>
+                <p><code>a:hover { color: red; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('a:hover { color: red; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>:active</h3>
+                <p><code>a:active { color: blue; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('a:active { color: blue; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>:focus</h3>
+                <p><code>input:focus { border: 1px solid blue; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('input:focus { border: 1px solid blue; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>:visited</h3>
+                <p><code>a:visited { color: purple; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('a:visited { color: purple; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>:link</h3>
+                <p><code>a:link { color: green; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('a:link { color: green; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>:first-child</h3>
+                <p><code>p:first-child { color: red; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('p:first-child { color: red; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>:last-child</h3>
+                <p><code>p:last-child { color: red; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('p:last-child { color: red; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>:nth-child</h3>
+                <p><code>p:nth-child(2) { color: red; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('p:nth-child(2) { color: red; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>:not</h3>
+                <p><code>p:not(.special) { color: red; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('p:not(.special) { color: red; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>::before</h3>
+                <p><code>p::before { content: "→"; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('p::before { content: &quot;→&quot;; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>::after</h3>
+                <p><code>p::after { content: "←"; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('p::after { content: &quot;←&quot;; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>::first-line</h3>
+                <p><code>p::first-line { color: red; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('p::first-line { color: red; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>::first-letter</h3>
+                <p><code>p::first-letter { font-size: 2em; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('p::first-letter { font-size: 2em; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>::selection</h3>
+                <p><code>::selection { background: yellow; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('::selection { background: yellow; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Animation</h3>
+                <p><code>animation: slide 2s infinite;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('animation: slide 2s infinite;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>@keyframes</h3>
+                <p><code>@keyframes slide { from { left: 0; } to { left: 100%; } }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('@keyframes slide { from { left: 0; } to { left: 100%; } }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Transform</h3>
+                <p><code>transform: rotate(45deg);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('transform: rotate(45deg);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Translate</h3>
+                <p><code>transform: translate(50px, 100px);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('transform: translate(50px, 100px);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Rotate</h3>
+                <p><code>transform: rotate(90deg);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('transform: rotate(90deg);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Scale</h3>
+                <p><code>transform: scale(2, 0.5);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('transform: scale(2, 0.5);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Skew</h3>
+                <p><code>transform: skew(20deg, 10deg);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('transform: skew(20deg, 10deg);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Matrix</h3>
+                <p><code>transform: matrix(1, 0, 0, 1, 10, 20);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('transform: matrix(1, 0, 0, 1, 10, 20);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Perspective</h3>
+                <p><code>perspective: 1000px;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('perspective: 1000px;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Backface-visibility</h3>
+                <p><code>backface-visibility: hidden;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('backface-visibility: hidden;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Z-index</h3>
+                <p><code>z-index: 10;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('z-index: 10;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Position</h3>
+                <p><code>position: relative;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('position: relative;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Static</h3>
+                <p><code>position: static;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('position: static;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Relative</h3>
+                <p><code>position: relative;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('position: relative;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Absolute</h3>
+                <p><code>position: absolute;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('position: absolute;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Fixed</h3>
+                <p><code>position: fixed;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('position: fixed;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Sticky</h3>
+                <p><code>position: sticky;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('position: sticky;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Float</h3>
+                <p><code>float: left;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('float: left;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Clear</h3>
+                <p><code>clear: both;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('clear: both;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Overflow</h3>
+                <p><code>overflow: hidden;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('overflow: hidden;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Clip</h3>
+                <p><code>clip: rect(0, 100px, 100px, 0);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('clip: rect(0, 100px, 100px, 0);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Visibility</h3>
+                <p><code>visibility: hidden;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('visibility: hidden;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Opacity</h3>
+                <p><code>opacity: 0.5;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('opacity: 0.5;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Cursor</h3>
+                <p><code>cursor: pointer;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('cursor: pointer;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>User-select</h3>
+                <p><code>user-select: none;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('user-select: none;')">Copy</button>
+            </div>
+
         </div>
         
     </body>

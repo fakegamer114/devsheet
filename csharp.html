@@ -68,6 +68,241 @@
                 <p><code>for(int i=0;i&lt;5;i++) { }</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('for(int i=0;i&lt;5;i++) { }')">Copy</button>
             </div>
+            
+            <div class="card">
+                <h3>Var</h3>
+                <p><code>var x = 5;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('var x = 5;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Dynamic</h3>
+                <p><code>dynamic d = 5;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('dynamic d = 5;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Delegate</h3>
+                <p><code>delegate void Del(string str);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('delegate void Del(string str);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Event</h3>
+                <p><code>event EventHandler MyEvent;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('event EventHandler MyEvent;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Async</h3>
+                <p><code>async Task MyMethod() { }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('async Task MyMethod() { }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Await</h3>
+                <p><code>await MyAsyncMethod();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('await MyAsyncMethod();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Task</h3>
+                <p><code>Task&lt;int&gt; t = Task.Run(() => 5);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('Task&lt;int&gt; t = Task.Run(() => 5);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>LINQ</h3>
+                <p><code>var result = from x in list select x;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('var result = from x in list select x;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>From</h3>
+                <p><code>from x in collection</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('from x in collection')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Where</h3>
+                <p><code>where x > 5</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('where x &gt; 5')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Select</h3>
+                <p><code>select x</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('select x')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>OrderBy</h3>
+                <p><code>orderby x</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('orderby x')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>GroupBy</h3>
+                <p><code>group x by x % 2</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('group x by x % 2')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Join</h3>
+                <p><code>join y in list2 on x equals y</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('join y in list2 on x equals y')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Let</h3>
+                <p><code>let sum = x + y</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('let sum = x + y')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Into</h3>
+                <p><code>into g</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('into g')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Generics</h3>
+                <p><code>List&lt;int&gt; list = new List&lt;int&gt;();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('List&lt;int&gt; list = new List&lt;int&gt;();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>List&lt;T&gt;</h3>
+                <p><code>List&lt;int&gt; list = new List&lt;int&gt;();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('List&lt;int&gt; list = new List&lt;int&gt;();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Dictionary&lt;TKey,TValue&gt;</h3>
+                <p><code>Dictionary&lt;int, string&gt; dict = new Dictionary&lt;int, string&gt;();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('Dictionary&lt;int, string&gt; dict = new Dictionary&lt;int, string&gt;();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>HashSet&lt;T&gt;</h3>
+                <p><code>HashSet&lt;int&gt; set = new HashSet&lt;int&gt;();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('HashSet&lt;int&gt; set = new HashSet&lt;int&gt;();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Queue&lt;T&gt;</h3>
+                <p><code>Queue&lt;int&gt; queue = new Queue&lt;int&gt;();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('Queue&lt;int&gt; queue = new Queue&lt;int&gt;();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Stack&lt;T&gt;</h3>
+                <p><code>Stack&lt;int&gt; stack = new Stack&lt;int&gt;();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('Stack&lt;int&gt; stack = new Stack&lt;int&gt;();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>ObservableCollection</h3>
+                <p><code>ObservableCollection&lt;int&gt; obs = new ObservableCollection&lt;int&gt;();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('ObservableCollection&lt;int&gt; obs = new ObservableCollection&lt;int&gt;();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>BindingList</h3>
+                <p><code>BindingList&lt;int&gt; binding = new BindingList&lt;int&gt;();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('BindingList&lt;int&gt; binding = new BindingList&lt;int&gt;();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>DataTable</h3>
+                <p><code>DataTable dt = new DataTable();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('DataTable dt = new DataTable();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>DataSet</h3>
+                <p><code>DataSet ds = new DataSet();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('DataSet ds = new DataSet();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>SqlConnection</h3>
+                <p><code>SqlConnection conn = new SqlConnection();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('SqlConnection conn = new SqlConnection();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>SqlCommand</h3>
+                <p><code>SqlCommand cmd = new SqlCommand();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('SqlCommand cmd = new SqlCommand();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>SqlDataReader</h3>
+                <p><code>SqlDataReader reader = cmd.ExecuteReader();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('SqlDataReader reader = cmd.ExecuteReader();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Entity Framework</h3>
+                <p><code>using Microsoft.EntityFrameworkCore;</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('using Microsoft.EntityFrameworkCore;')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>DbContext</h3>
+                <p><code>class MyContext : DbContext { }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('class MyContext : DbContext { }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>DbSet</h3>
+                <p><code>DbSet&lt;Entity&gt; Entities { get; set; }</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('DbSet&lt;Entity&gt; Entities { get; set; }')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Migration</h3>
+                <p><code>Add-Migration InitialCreate</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('Add-Migration InitialCreate')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Attribute</h3>
+                <p><code>[Serializable]</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('[Serializable]')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Reflection</h3>
+                <p><code>Type t = typeof(MyClass);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('Type t = typeof(MyClass);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>Serialization</h3>
+                <p><code>BinaryFormatter bf = new BinaryFormatter();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('BinaryFormatter bf = new BinaryFormatter();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>JsonConvert</h3>
+                <p><code>string json = JsonConvert.SerializeObject(obj);</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('string json = JsonConvert.SerializeObject(obj);')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>HttpClient</h3>
+                <p><code>HttpClient client = new HttpClient();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('HttpClient client = new HttpClient();')">Copy</button>
+            </div>
+            
+            <div class="card">
+                <h3>WebClient</h3>
+                <p><code>WebClient wc = new WebClient();</code></p>
+                <button class="copy-btn" onclick="copyToClipboard('WebClient wc = new WebClient();')">Copy</button>
+            </div>
+
         </div>
         
     </body>
