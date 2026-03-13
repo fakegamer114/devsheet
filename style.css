@@ -78,7 +78,7 @@ h2 {
 }
 .go-to-sheets-btn {
   display: block;
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 12px 24px;
   background-color: #0d7377;
   color: white;
@@ -87,7 +87,20 @@ h2 {
   cursor: pointer;
   font-size: 18px;
   animation: fadeInUp 1.5s ease-out;
-  margin-bottom: 100px;
+  margin-bottom: 2vh;
+}
+.fav-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 24px;
+  background-color: #c53838;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  animation: fadeInUp 1.5s ease-out;
+  margin-bottom: 10vh;
 }
 .features {
   display: flex;

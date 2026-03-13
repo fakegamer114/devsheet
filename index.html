@@ -26,14 +26,17 @@
 <body> 
     <h4># all programming languages in one place</h4>
     <h2>make your work easier with.<span class="highlight">DevSheet.</span></h2>
-    <!--button fo going to the sheatsheet page-->
-    <button class="go-to-sheets-btn" onclick="window.location.href='sheatsheet.html'">Explore the Sheatsheets</button>
+    <!--buttons for navigating-->
+    <div style="display: flex; flex-direction: column; gap: 15px; align-items: center; margin-bottom: 30px;">
+        <button class="go-to-sheets-btn" onclick="window.location.href='sheatsheet.html'">Explore the Sheatsheets</button>
+        <button class="fav-btn" onclick="window.location.href='favorites.html'" style="background-color: #c53838;">View Favorites </button>
+    </div>
     <!--a small show cards for the features-->
     <div class="features">
 
         <div class="feature-card">
             <h3><i class="fas fa-book"></i>
-               Comprehensive Cheatsheets
+               Comprehensive Sheatsheets
               </h3>
             <p>Access detailed cheatsheets for Python, HTML, CSS, JavaScript, Java, C#, C++, C, and Assembly.</p>
         </div>
@@ -52,12 +55,32 @@
             <p>Engage with interactive examples and quizzes to reinforce your understanding of programming concepts.</p>
         </div>
     </div>
+    <div class="features">
+    <div class="feature-card">
+            <h3>favorites <i class="fas fa-heart"></i>
+               
+              </h3>
+              <p>Save your favorite Sheatsheets for quick access , and make your own lists.</p>
 
+            </div>
 
+        <div class="feature-card">
+            <h3><i class="fas fa-cogs"></i>
+                Customization
+            </h3>
+            <p>Personalize your experience by customizing the appearance of the cheatsheets and the interface.(still in development)</p>
+        </div>
+        <div class="feature-card">
+            <h3><i class="fas fa-bug"></i>
+                Bug Fixes
+            </h3>
+            <p>Regular updates to fix any issues and improve the overall performance of the application.</p>
+        </div>
+    </div>
 
 </body>
 <footer>
-  <p>&copy; 2026 DevSheet. All rights reserved.</p>
+  <p>&copy; 2026 DevSheet. All rights reserved.  1.6V</p>
 
 </footer>
 </html>

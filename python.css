@@ -181,6 +181,33 @@ h2 {
   background-color: #0a5a5c;
 }
 
+/* Favorite button */
+.favorite-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: transparent;
+  color: #ffffff81;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-btn:hover {
+  color: #0d7377;
+}
+
+.favorite-btn.favorited {
+  color: #ff6b6b;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .cards-container {

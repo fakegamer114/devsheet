@@ -34,277 +34,323 @@
         
         <!--cards for the sheatsheet withe favorating and copy ability-->
         <div class="cards-container">
-            <div class="card">
+            <div class="card" data-language="python" data-title="Variables">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Variables', 'x = 5\ny = &quot;Hello&quot;')">♡</button>
                 <h3>Variables</h3>
                 <p><code>x = 5<br>y = "Hello"</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('x = 5\ny = &quot;Hello&quot;')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Data Types">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Data Types', 'int, float, str, bool, list, dict')">♡</button>
                 <h3>Data Types</h3>
                 <p><code>int, float, str, bool, list, dict</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('int, float, str, bool, list, dict')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Lists">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Lists', 'my_list = [1, 2, 3]\nmy_list.append(4)')">♡</button>
                 <h3>Lists</h3>
                 <p><code>my_list = [1, 2, 3]<br>my_list.append(4)</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('my_list = [1, 2, 3]\nmy_list.append(4)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Dictionaries">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Dictionaries', 'my_dict = {\'key\': \'value\'}\nmy_dict[\'new_key\'] = \'new_value\'')" >♡</button>
                 <h3>Dictionaries</h3>
                 <p><code>my_dict = {'key': 'value'}<br>my_dict['new_key'] = 'new_value'</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('my_dict = {\'key\': \'value\'}\nmy_dict[\'new_key\'] = \'new_value\'')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="If Statement">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'If Statement', 'if x > 5:\n    print(&quot;x is greater than 5&quot;)')">♡</button>
                 <h3>If Statement</h3>
                 <p><code>if x > 5:<br>&nbsp;&nbsp;print("x is greater than 5")</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('if x > 5:\n    print(&quot;x is greater than 5&quot;)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="For Loop">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'For Loop', 'for i in range(5):\n    print(i)')">♡</button>
                 <h3>For Loop</h3>
                 <p><code>for i in range(5):<br>&nbsp;&nbsp;print(i)</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('for i in range(5):\n    print(i)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="While Loop">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'While Loop', 'while x < 10:\n    x += 1')">♡</button>
                 <h3>While Loop</h3>
                 <p><code>while x < 10:<br>&nbsp;&nbsp;x += 1</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('while x < 10:\n    x += 1')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Function">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Function', 'def my_function():\n    return &quot;Hello&quot;')">♡</button>
                 <h3>Function</h3>
                 <p><code>def my_function():<br>&nbsp;&nbsp;return "Hello"</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('def my_function():\n    return &quot;Hello&quot;')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Print Statement">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Print Statement', 'print(&quot;Hello World&quot;)\nprint(f&quot;x = {x}&quot;)')">♡</button>
                 <h3>Print Statement</h3>
                 <p><code>print("Hello World")<br>print(f"x = {x}")</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('print(&quot;Hello World&quot;)\nprint(f&quot;x = {x}&quot;)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Input">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Input', 'name = input(&quot;Enter name: &quot;)')">♡</button>
                 <h3>Input</h3>
                 <p><code>name = input("Enter name: ")</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('name = input(&quot;Enter name: &quot;)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Strings">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Strings', 'my_string = &quot;Hello&quot;\nprint(len(my_string))\nprint(my_string.upper())')">♡</button>
                 <h3>Strings</h3>
                 <p><code>my_string = "Hello"<br>print(len(my_string))<br>print(my_string.upper())</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('my_string = &quot;Hello&quot;\nprint(len(my_string))\nprint(my_string.upper())')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Tuples">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Tuples', 'my_tuple = (1, 2, 3)\nprint(my_tuple[0])')">♡</button>
                 <h3>Tuples</h3>
                 <p><code>my_tuple = (1, 2, 3)<br>print(my_tuple[0])</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('my_tuple = (1, 2, 3)\nprint(my_tuple[0])')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Sets">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Sets', 'my_set = {1, 2, 3}\nmy_set.add(4)')">♡</button>
                 <h3>Sets</h3>
                 <p><code>my_set = {1, 2, 3}<br>my_set.add(4)</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('my_set = {1, 2, 3}\nmy_set.add(4)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="List Comprehensions">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'List Comprehensions', 'squares = [x**2 for x in range(5)]\nprint(squares)')">♡</button>
                 <h3>List Comprehensions</h3>
                 <p><code>squares = [x**2 for x in range(5)]<br>print(squares)</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('squares = [x**2 for x in range(5)]\nprint(squares)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Dictionary Comprehensions">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Dictionary Comprehensions', 'squares_dict = {x: x**2 for x in range(5)}\nprint(squares_dict)')">♡</button>
                 <h3>Dictionary Comprehensions</h3>
                 <p><code>squares_dict = {x: x**2 for x in range(5)}<br>print(squares_dict)</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('squares_dict = {x: x**2 for x in range(5)}\nprint(squares_dict)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Lambda Functions">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Lambda Functions', 'add = lambda a, b: a + b\nprint(add(2, 3))')">♡</button>
                 <h3>Lambda Functions</h3>
                 <p><code>add = lambda a, b: a + b<br>print(add(2, 3))</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('add = lambda a, b: a + b\nprint(add(2, 3))')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Classes">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Classes', 'class MyClass:\n    def __init__(self, value):\n        self.value = value')">♡</button>
                 <h3>Classes</h3>
                 <p><code>class MyClass:<br>&nbsp;&nbsp;def __init__(self, value):<br>&nbsp;&nbsp;&nbsp;&nbsp;self.value = value</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('class MyClass:\n    def __init__(self, value):\n        self.value = value')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Try-Except">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Try-Except', 'try:\n    x = 1 / 0\nexcept ZeroDivisionError:\n    print(&quot;Error&quot;)')">♡</button>
                 <h3>Try-Except</h3>
                 <p><code>try:<br>&nbsp;&nbsp;x = 1 / 0<br>except ZeroDivisionError:<br>&nbsp;&nbsp;print("Error")</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('try:\n    x = 1 / 0\nexcept ZeroDivisionError:\n    print(&quot;Error&quot;)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="File Handling">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'File Handling', 'with open(\'file.txt\', \'w\') as f:\n    f.write(&quot;Hello&quot;)')">♡</button>
                 <h3>File Handling</h3>
                 <p><code>with open('file.txt', 'w') as f:<br>&nbsp;&nbsp;f.write("Hello")</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('with open(&#39;file.txt&#39;, &#39;w&#39;) as f:\n    f.write(&quot;Hello&quot;)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Modules">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Modules', 'import math\nprint(math.sqrt(16))')">♡</button>
                 <h3>Modules</h3>
                 <p><code>import math<br>print(math.sqrt(16))</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('import math\nprint(math.sqrt(16))')">Copy</button>
             </div>
 
-            <div class="card">
+            <div class="card" data-language="python" data-title="List Slicing">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'List Slicing', 'my_list = [0, 1, 2, 3, 4]\nprint(my_list[1:3])\nprint(my_list[::2])')">♡</button>
                 <h3>List Slicing</h3>
                 <p><code>my_list = [0, 1, 2, 3, 4]<br>print(my_list[1:3])<br>print(my_list[::2])</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('my_list = [0, 1, 2, 3, 4]\nprint(my_list[1:3])\nprint(my_list[::2])')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="String Methods">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'String Methods', 'text = &quot;hello world&quot;\nprint(text.upper())\nprint(text.split())')">♡</button>
                 <h3>String Methods</h3>
                 <p><code>text = "hello world"<br>print(text.upper())<br>print(text.split())</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('text = &quot;hello world&quot;\nprint(text.upper())\nprint(text.split())')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Enumerate">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Enumerate', 'for i, item in enumerate([\'a\', \'b\', \'c\']):\n    print(i, item)')">♡</button>
                 <h3>Enumerate</h3>
                 <p><code>for i, item in enumerate(['a', 'b', 'c']):<br>&nbsp;&nbsp;print(i, item)</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('for i, item in enumerate([\'a\', \'b\', \'c\']):\n    print(i, item)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Zip">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Zip', 'names = [\'Alice\', \'Bob\']\nages = [25, 30]\nfor name, age in zip(names, ages):\n    print(name, age)')">♡</button>
                 <h3>Zip</h3>
                 <p><code>names = ['Alice', 'Bob']<br>ages = [25, 30]<br>for name, age in zip(names, ages):<br>&nbsp;&nbsp;print(name, age)</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('names = [\'Alice\', \'Bob\']\nages = [25, 30]\nfor name, age in zip(names, ages):\n    print(name, age)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Map">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Map', 'numbers = [1, 2, 3]\nsquared = list(map(lambda x: x**2, numbers))')">♡</button>
                 <h3>Map</h3>
                 <p><code>numbers = [1, 2, 3]<br>squared = list(map(lambda x: x**2, numbers))</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('numbers = [1, 2, 3]\nsquared = list(map(lambda x: x**2, numbers))')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Filter">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Filter', 'numbers = [1, 2, 3, 4, 5]\nevens = list(filter(lambda x: x % 2 == 0, numbers))')">♡</button>
                 <h3>Filter</h3>
                 <p><code>numbers = [1, 2, 3, 4, 5]<br>evens = list(filter(lambda x: x % 2 == 0, numbers))</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('numbers = [1, 2, 3, 4, 5]\nevens = list(filter(lambda x: x % 2 == 0, numbers))')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="*args">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', '*args', 'def func(*args):\n    for arg in args:\n        print(arg)\nfunc(1, 2, 3)')">♡</button>
                 <h3>*args</h3>
                 <p><code>def func(*args):<br>&nbsp;&nbsp;for arg in args:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(arg)<br>func(1, 2, 3)</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('def func(*args):\n    for arg in args:\n        print(arg)\nfunc(1, 2, 3)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="**kwargs">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', '**kwargs', 'def func(**kwargs):\n    for key, value in kwargs.items():\n        print(key, value)')">♡</button>
                 <h3>**kwargs</h3>
                 <p><code>def func(**kwargs):<br>&nbsp;&nbsp;for key, value in kwargs.items():<br>&nbsp;&nbsp;&nbsp;&nbsp;print(key, value)</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('def func(**kwargs):\n    for key, value in kwargs.items():\n        print(key, value)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Type Hints">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Type Hints', 'def add(a: int, b: int) -> int:\n    return a + b')">♡</button>
                 <h3>Type Hints</h3>
                 <p><code>def add(a: int, b: int) -> int:<br>&nbsp;&nbsp;return a + b</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('def add(a: int, b: int) -> int:\n    return a + b')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Generator">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Generator', 'def count_up(max):\n    n = 1\n    while n <= max:\n        yield n\n        n += 1')">♡</button>
                 <h3>Generator</h3>
                 <p><code>def count_up(max):<br>&nbsp;&nbsp;n = 1<br>&nbsp;&nbsp;while n <= max:<br>&nbsp;&nbsp;&nbsp;&nbsp;yield n<br>&nbsp;&nbsp;&nbsp;&nbsp;n += 1</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('def count_up(max):\n    n = 1\n    while n <= max:\n        yield n\n        n += 1')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Decorators">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Decorators', 'def decorator(func):\n    def wrapper():\n        print(&quot;Before&quot;)\n        func()\n    return wrapper')">♡</button>
                 <h3>Decorators</h3>
                 <p><code>def decorator(func):<br>&nbsp;&nbsp;def wrapper():<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Before")<br>&nbsp;&nbsp;&nbsp;&nbsp;func()<br>&nbsp;&nbsp;return wrapper</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('def decorator(func):\n    def wrapper():\n        print(&quot;Before&quot;)\n        func()\n    return wrapper')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Sorting">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Sorting', 'my_list = [3, 1, 2]\nsorted_list = sorted(my_list)\nmy_list.sort()')">♡</button>
                 <h3>Sorting</h3>
                 <p><code>my_list = [3, 1, 2]<br>sorted_list = sorted(my_list)<br>my_list.sort()</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('my_list = [3, 1, 2]\nsorted_list = sorted(my_list)\nmy_list.sort()')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="List Methods">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'List Methods', 'lst = [1, 2, 3]\nlst.append(4)\nlst.remove(2)\nlst.pop()')">♡</button>
                 <h3>List Methods</h3>
                 <p><code>lst = [1, 2, 3]<br>lst.append(4)<br>lst.remove(2)<br>lst.pop()</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('lst = [1, 2, 3]\nlst.append(4)\nlst.remove(2)\nlst.pop()')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Dictionary Methods">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Dictionary Methods', 'd = {\'a\': 1, \'b\': 2}\nprint(d.keys())\nprint(d.values())\nprint(d.items())')">♡</button>
                 <h3>Dictionary Methods</h3>
                 <p><code>d = {'a': 1, 'b': 2}<br>print(d.keys())<br>print(d.values())<br>print(d.items())</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('d = {\'a\': 1, \'b\': 2}\nprint(d.keys())\nprint(d.values())\nprint(d.items())')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Any & All">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Any & All', 'lst = [True, True, False]\nprint(any(lst))\nprint(all(lst))')">♡</button>
                 <h3>Any & All</h3>
                 <p><code>lst = [True, True, False]<br>print(any(lst))<br>print(all(lst))</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('lst = [True, True, False]\nprint(any(lst))\nprint(all(lst))')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Join & Split">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Join & Split', 'lst = [\'a\', \'b\', \'c\']\ntext = \'-\'.join(lst)\nwords = text.split(\'-\')')">♡</button>
                 <h3>Join & Split</h3>
                 <p><code>lst = ['a', 'b', 'c']<br>text = '-'.join(lst)<br>words = text.split('-')</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('lst = [\'a\', \'b\', \'c\']\ntext = \'-\'.join(lst)\nwords = text.split(\'-\')')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Context Managers">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Context Managers', 'with open(\'file.txt\', \'r\') as f:\n    content = f.read()')">♡</button>
                 <h3>Context Managers</h3>
                 <p><code>with open('file.txt', 'r') as f:<br>&nbsp;&nbsp;content = f.read()</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('with open(&#39;file.txt&#39;, &#39;r&#39;) as f:\n    content = f.read()')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Inheritance">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Inheritance', 'class Animal:\n    def speak(self):\n        pass\nclass Dog(Animal):\n    def speak(self):\n        return &quot;Woof&quot;')">♡</button>
                 <h3>Inheritance</h3>
                 <p><code>class Animal:<br>&nbsp;&nbsp;def speak(self):<br>&nbsp;&nbsp;&nbsp;&nbsp;pass<br>class Dog(Animal):<br>&nbsp;&nbsp;def speak(self):<br>&nbsp;&nbsp;&nbsp;&nbsp;return "Woof"</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('class Animal:\n    def speak(self):\n        pass\nclass Dog(Animal):\n    def speak(self):\n        return &quot;Woof&quot;')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Magic Methods">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Magic Methods', 'class MyClass:\n    def __init__(self, value):\n        self.value = value\n    def __str__(self):\n        return str(self.value)')">♡</button>
                 <h3>Magic Methods</h3>
                 <p><code>class MyClass:<br>&nbsp;&nbsp;def __init__(self, value):<br>&nbsp;&nbsp;&nbsp;&nbsp;self.value = value<br>&nbsp;&nbsp;def __str__(self):<br>&nbsp;&nbsp;&nbsp;&nbsp;return str(self.value)</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('class MyClass:\n    def __init__(self, value):\n        self.value = value\n    def __str__(self):\n        return str(self.value)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="F-strings">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'F-strings', 'name = &quot;Alice&quot;\nage = 30\nprint(f&quot;{name} is {age} years old&quot;)')">♡</button>
                 <h3>F-strings</h3>
                 <p><code>name = "Alice"<br>age = 30<br>print(f"{name} is {age} years old")</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('name = &quot;Alice&quot;\nage = 30\nprint(f&quot;{name} is {age} years old&quot;)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Regular Expressions">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Regular Expressions', 'import re\npattern = r\'\\d+\'\ntext = &quot;There are 123 apples&quot;\nmatch = re.findall(pattern, text)')">♡</button>
                 <h3>Regular Expressions</h3>
                 <p><code>import re<br>pattern = r'\d+'<br>text = "There are 123 apples"<br>matches = re.findall(pattern, text)</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('import re\npattern = r&#39;\\d+&#39;\ntext = &quot;There are 123 apples&quot;\nmatch = re.findall(pattern, text)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="JSON Handling">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'JSON Handling', 'import json\ndata = {&#39;name&#39;: &#39;Alice&#39;, &#39;age&#39;: 30}\njson_str = json.dumps(data)\nparsed = json.loads(json_str)')">♡</button>
                 <h3>JSON Handling</h3>
                 <p><code>import json<br>data = {'name': 'Alice', 'age': 30}<br>json_str = json.dumps(data)<br>parsed = json.loads(json_str)</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('import json\ndata = {&#39;name&#39;: &#39;Alice&#39;, &#39;age&#39;: 30}\njson_str = json.dumps(data)\nparsed = json.loads(json_str)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Datetime">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Datetime', 'from datetime import datetime\nnow = datetime.now()\nprint(now.strftime(&quot;%Y-%m-%d&quot;))')">♡</button>
                 <h3>Datetime</h3>
                 <p><code>from datetime import datetime<br>now = datetime.now()<br>print(now.strftime("%Y-%m-%d"))</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('from datetime import datetime\nnow = datetime.now()\nprint(now.strftime(&quot;%Y-%m-%d&quot;))')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Random Module">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Random Module', 'import random\nprint(random.randint(1, 10))\nprint(random.choice([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]))')">♡</button>
                 <h3>Random Module</h3>
                 <p><code>import random<br>print(random.randint(1, 10))<br>print(random.choice(['a', 'b', 'c']))</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('import random\nprint(random.randint(1, 10))\nprint(random.choice([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]))')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="OS Module">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'OS Module', 'import os\nprint(os.getcwd())\nos.mkdir(\'new_folder\')')">♡</button>
                 <h3>OS Module</h3>
                 <p><code>import os<br>print(os.getcwd())<br>os.mkdir('new_folder')</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('import os\nprint(os.getcwd())\nos.mkdir(&#39;new_folder&#39;)')">Copy</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-language="python" data-title="Recursion">
+                <button class="favorite-btn" onclick="toggleFavorite(this, 'python', 'Recursion', 'def factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n-1)')">♡</button>
                 <h3>Recursion</h3>
                 <p><code>def factorial(n):<br>&nbsp;&nbsp;if n == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;return 1<br>&nbsp;&nbsp;return n * factorial(n-1)</code></p>
                 <button class="copy-btn" onclick="copyToClipboard('def factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n-1)')">Copy</button>

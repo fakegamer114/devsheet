@@ -63,3 +63,80 @@ function copyToClipboard(text) {
   });
 }
 
+// Favorites functionality
+function toggleFavorite(btn, language, title, code) {
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || {};
+  
+  if (!favorites[language]) {
+    favorites[language] = [];
+  }
+  
+  const favorite = { title, code };
+  const favoriteStr = JSON.stringify(favorite);
+  const index = favorites[language].findIndex(fav => JSON.stringify(fav) === favoriteStr);
+  
+  if (index > -1) {
+    // Remove favorite
+    favorites[language].splice(index, 1);
+    btn.textContent = '♡';
+    btn.classList.remove('favorited');
+  } else {
+    // Add favorite
+    favorites[language].push(favorite);
+    btn.textContent = '♥';
+    btn.classList.add('favorited');
+  }
+  
+  localStorage.setItem('favorites', JSON.stringify(favorites));
+  console.log("Favorites updated for " + language);
+}
+
+// Load favorites on page load
+document.addEventListener('DOMContentLoaded', function() {
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || {};
+  const cards = document.querySelectorAll('.card');
+  
+  cards.forEach(card => {
+    const language = card.getAttribute('data-language');
+    const title = card.getAttribute('data-title');
+    const btn = card.querySelector('.favorite-btn');
+    
+    if (btn && favorites[language]) {
+      const isFavorited = favorites[language].some(fav => fav.title === title);
+      if (isFavorited) {
+        btn.textContent = '♥';
+        btn.classList.add('favorited');
+      }
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('.card');
+  
+  // نأخذ اسم اللغة من عنوان الصفحة
+  // مثلاً "DevSheet - JavaScript Cheatsheet" نأخذ "javascript"
+  const titleParts = document.title.split(' - ');
+  const language = titleParts[1]
+    ? titleParts[1].replace(' Cheatsheet', '').toLowerCase().trim()
+    : 'unknown';
+
+  cards.forEach(card => {
+  const title = card.querySelector('h3').textContent.trim();
+  const code = card.querySelector('code').textContent.trim();
+  
+  card.setAttribute('data-language', language);
+  card.setAttribute('data-title', title);
+
+  // تحقق هل الزر موجود مسبقاً
+  if (!card.querySelector('.favorite-btn')) {
+    const favoriteBtn = document.createElement('button');
+    favoriteBtn.className = 'favorite-btn';
+    favoriteBtn.textContent = '♡';
+    favoriteBtn.addEventListener('click', function() {
+      toggleFavorite(this, language, title, code);
+    });
+    card.appendChild(favoriteBtn);
+  }
+});
+});

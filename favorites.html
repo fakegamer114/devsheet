@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your saved favorite programming cheatsheet cards">
+  <title>Favorites - DevSheet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="python.css">
+  <link rel="icon" href="download.png" type="image/png">
+  <script src="node.js"></script>
+  <style>
+    /* Favorites specific styles */
+    .favorites-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 20px;
+      justify-content: center;
+      background-color: #0a0a0a;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .language-tab {
+      background-color: #0a0a0a;
+      color: #ffffff81;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .language-tab:hover {
+      border-color: #0d7377;
+      color: #ffffff;
+    }
+
+    .language-tab.active {
+      background-color: #0d7377;
+      color: white;
+      border-color: #0d7377;
+    }
+
+    .favorites-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .favorite-card {
+      background: linear-gradient(135deg, #000000 0%, #111111 100%);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 16px;
+      padding: 24px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .favorite-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #0d7377, #00a8ad);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .favorite-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 12px 40px rgba(13, 115, 119, 0.4);
+      border-color: #0d7377;
+    }
+
+    .favorite-card:hover::before {
+      opacity: 1;
+    }
+
+    .favorite-card h3 {
+      color: #ffffff81;
+      font-size: 18px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 5px;
+      margin-top: 0;
+    }
+
+    .favorite-card p {
+      color: #ffffff;
+      font-size: 14px;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    .favorite-card code {
+      background-color: #cccccc00;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      color: #ffffff;
+    }
+
+    .remove-favorite-btn {
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: background-color 0.2s ease;
+      margin-right: 10px;
+    }
+
+    .remove-favorite-btn:hover {
+      background-color: #ff5252;
+    }
+
+    .favorites-button-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .empty-message {
+      text-align: center;
+      color: #ffffff81;
+      padding: 40px 20px;
+      font-size: 18px;
+    }
+
+    .empty-message a {
+      color: #0d7377;
+      text-decoration: none;
+    }
+
+    .empty-message a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-icon" onclick="window.location.href='index.html'">&gt;_</div>
+      <span class="logo-text" onclick="window.location.href='index.html'">DevSheet</span>
+    </div>
+    <button class="open-btn" id="openAppBtn" onclick="openApp()">Open App</button>
+  </header>
+
+  <button class="back-btn" onclick="goBack()">← Back</button>
+
+  <h2>Your Favorites</h2>
+
+  <!-- Language tabs -->
+  <div class="favorites-nav" id="languageTabs"></div>
+
+  <!-- Favorites display area -->
+  <div id="favoritesContent"></div>
+
+  <footer>
+    <p>&copy; 2026 DevSheet. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Available languages
+    const languages = ['python', 'javascript', 'java', 'cpp', 'csharp', 'html', 'css', 'c', 'assembly'];
+
+    // Initialize the page
+    document.addEventListener('DOMContentLoaded', function() {
+      displayLanguageTabs();
+      displayFavorites('python'); // Show Python by default
+    });
+
+    // Display language tabs
+    function displayLanguageTabs() {
+      const tabsContainer = document.getElementById('languageTabs');
+      const favorites = JSON.parse(localStorage.getItem('favorites')) || {};
+
+      languages.forEach(lang => {
+        const count = (favorites[lang] || []).length;
+        const tab = document.createElement('button');
+        tab.className = 'language-tab' + (lang === 'python' ? ' active' : '');
+        tab.textContent = lang.charAt(0).toUpperCase() + lang.slice(1) + ` (${count})`;
+        tab.onclick = () => switchLanguage(lang);
+        tabsContainer.appendChild(tab);
+      });
+    }
+
+    // Switch between languages
+    function switchLanguage(language) {
+      // Update active tab
+      document.querySelectorAll('.language-tab').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      event.target.classList.add('active');
+
+      // Display favorites for selected language
+      displayFavorites(language);
+    }
+
+    // Display favorites for a language
+    function displayFavorites(language) {
+      const favorites = JSON.parse(localStorage.getItem('favorites')) || {};
+      const favList = favorites[language] || [];
+      const contentContainer = document.getElementById('favoritesContent');
+      
+      contentContainer.innerHTML = '';
+
+      if (favList.length === 0) {
+        contentContainer.innerHTML = `
+          <div class="empty-message">
+            <p>No favorites saved for ${language.charAt(0).toUpperCase() + language.slice(1)} yet.</p>
+            <p><a href="${language}.html">Go to ${language.charAt(0).toUpperCase() + language.slice(1)} cheatsheet</a></p>
+          </div>
+        `;
+        return;
+      }
+
+      const cardsHTML = favList.map((fav, index) => `
+        <div class="favorite-card">
+          <h3>${fav.title}</h3>
+          <p><code>${escapeHtml(fav.code)}</code></p>
+          <div class="favorites-button-group">
+            <button class="remove-favorite-btn" onclick="removeFavorite('${language}', ${index})">Remove</button>
+            <button class="copy-btn" onclick="copyToClipboard('${escapeForCopy(fav.code)}')">Copy</button>
+          </div>
+        </div>
+      `).join('');
+
+      const container = document.createElement('div');
+      container.className = 'favorites-container';
+      container.innerHTML = cardsHTML;
+      contentContainer.appendChild(container);
+    }
+
+    // Remove a favorite
+    function removeFavorite(language, index) {
+      const favorites = JSON.parse(localStorage.getItem('favorites')) || {};
+      
+      if (favorites[language]) {
+        favorites[language].splice(index, 1);
+      }
+
+      localStorage.setItem('favorites', JSON.stringify(favorites));
+
+      // Refresh tabs and display
+      document.getElementById('languageTabs').innerHTML = '';
+      displayLanguageTabs();
+      displayFavorites(language);
+    }
+
+    // Helper function to escape HTML
+    function escapeHtml(text) {
+      const map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+      };
+      return text.replace(/[&<>"']/g, m => map[m]);
+    }
+
+    // Helper function to escape text for copy button onclick
+    function escapeForCopy(text) {
+      return text.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/\n/g, '\\n');
+    }
+
+    // Add openApp function if not already defined
+    if (typeof openApp === 'undefined') {
+      function openApp() {
+        alert("This button is not functional yet. Please check back later!");
+        console.log("Open App button was clicked, but it's not functional yet.");
+      }
+    }
+
+    // Add goBack function if not already defined
+    if (typeof goBack === 'undefined') {
+      function goBack() {
+        window.history.back();
+        console.log("Back button was clicked, navigating to the previous page.");
+      }
+    }
+  </script>
+</body>
+</html>
